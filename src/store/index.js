@@ -62,8 +62,8 @@ export default new Vuex.Store({
       commit('REMOVE_FROM_CART', index)
     },
     INCREMENT_CART_ITEM({commit}, index) {
-      commit('INCREMENT', index)
-    },
+    commit('INCREMENT', index)
+  },
     DECREMENT_CART_ITEM({commit}, index) {
       commit('DECREMENT', index)
     },
@@ -73,6 +73,9 @@ export default new Vuex.Store({
   getters: {
     PRODUCTS(state) {
       return state.products;
+    },
+    CART(state) {
+      return state.cart;
     }
   }
 })
