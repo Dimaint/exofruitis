@@ -46,7 +46,7 @@ export default {
         {
           icon: "mdi-apps",
           title: "Фрукты",
-          to: "/",
+          to: "/shop",
         },
         {
           icon: "mdi-account-circle-outline",
