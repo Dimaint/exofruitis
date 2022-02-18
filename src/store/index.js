@@ -17,7 +17,7 @@ export default new Vuex.Store({
       let isProductExists = false;
       if (state.cart.length) {
         state.cart.map(function (item) {
-          if (item.article === product.article) {
+          if (item.id === product.id) {
             isProductExists = true;
             item.quantity++
           }
